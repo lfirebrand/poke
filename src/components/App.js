@@ -1,12 +1,17 @@
 import React, { Component } from "react";
+import PokeList from "./PokeList.js";
 import "./styles/App.css";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   render() {
     return (
       <div className="App">
-        hello poke lover
-        <img src="http://placekitten.com/g/200/300" alt="kitten"></img>
+        <PokeList />
       </div>
     );
   }
